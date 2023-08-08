@@ -17,7 +17,7 @@ const start = () => {
         const table = document.getElementsByTagName('table')[0];
 
         // add column headers
-        const columnHeaders = document.createElement('tr');
+        const columnHeaders = document.createElement('th');
         columnHeaders.innerHTML = 
         `<th>${loadedData[0][0]}</th>
         <th>|</th>
