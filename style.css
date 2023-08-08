@@ -248,3 +248,7 @@ table{
   margin: 0;
   text-align: right;
 }
+
+td{
+  font-size: x-large;
+}
