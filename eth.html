@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <script src="https://widgets.coingecko.com/coingecko-coin-converter-widget.js"></script>
+    <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script>
+    <script src="script.js"></script>
+    <title>Maxfel</title>
+</head>
+<body>
+    <navbar>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn"> <img src="speisekarte.jpg" id="burger-icon" class="drpdn">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home
+                    </a>
+                    <a href="news.html">News
+                    </a>
+                    <div class="nested-dropdown">
+                        <a>Krypto
+                        </a>
+                        <div class="nested-dropdown-content">
+                            <a href="btc.html">Bitcoin
+                            </a>
+                            <a href="eth.html">Ethereum
+                            </a>
+                            <a href="ltc.html">Litecoin
+                            </a>
+                        </div>
+                    </div>
+                    <a href="holz.html">Holz
+                    </a>
+                    <a href="quellen.html">Quellen
+                    </a>
+                </div>
+            </div>
+            <h3 class="header-text">Maxfel | Krypto | Ethereum</h3>
+        </div>
+    </navbar>
+
+    <main>
+        <h3 class="krypto-text-above">
+            Ethereum ist eine dezentrale Blockchain-Plattform, die es Entwicklern ermöglicht, Smart Contracts zu erstellen und dezentrale Anwendungen (DApps) zu entwickeln. Im Gegensatz zu Bitcoin, das hauptsächlich als digitales Zahlungsmittel dient, bietet Ethereum eine erweiterte Funktionalität und ermöglicht die Erstellung von Anwendungen auf der Blockchain.
+            <br>
+            <br>
+            Die Kryptowährung Ethereum selbst wird als "Ether" bezeichnet und ist die native Kryptowährung der Ethereum-Plattform. Ether wird verwendet, um Transaktionen auf der Ethereum-Blockchain durchzuführen, Ressourcen innerhalb des Netzwerks zu bezahlen und Smart Contracts auszuführen.
+        </h3>
+        <div class="cg-widget-container">
+            <coingecko-coin-price-chart-widget
+                coin-id="ethereum" currency="eur" height="300" locale="de" background-color="#D3E1E2" container="min-content">
+            </coingecko-coin-price-chart-widget>
+        </div>
+        <h2 class="krypto-text-u-u" margin-top="0">Wichtige Merkmale der Kryptowährung Bitcoin sind unter anderem:
+            <h3 class="krypto-text-under">
+                <ol>
+                    <li>Smart Contracts: 
+                        <br>
+                        Ethereum ermöglicht die Erstellung und Ausführung von Smart Contracts, die selbstausführbare Verträge sind und automatisch ausgeführt werden, wenn bestimmte vordefinierte Bedingungen erfüllt sind. Diese Smart Contracts ermöglichen die Automatisierung von Transaktionen und die Entwicklung von dezentralen Anwendungen.</li>
+                    <br>
+                    <li>Dezentrale Anwendungen (DApps): 
+                        <br>
+                        Entwickler können auf der Ethereum-Plattform dezentrale Anwendungen (DApps) erstellen, die auf der Blockchain ausgeführt werden. Diese DApps bieten eine Vielzahl von Anwendungsfällen, von Finanzanwendungen bis hin zu dezentralen Marktplätzen und Spielen.</li>
+                    <br>
+                    <li>Ethereum Virtual Machine (EVM): 
+                        <br>
+                        Die Ethereum-Plattform verfügt über eine virtuelle Maschine, die als Ethereum Virtual Machine (EVM) bezeichnet wird. Die EVM ermöglicht die Ausführung von Smart Contracts und bildet die Grundlage für die Entwicklung von DApps.</li>
+                    <br>
+                    <li>ERC-20 und ERC-721 Tokens: 
+                        <br>
+                        Ethereum bietet einen Standard für die Erstellung von Tokens auf der Plattform. ERC-20 ist der bekannteste Token-Standard und ermöglicht die Erstellung von fungiblen Token, während ERC-721 die Erstellung von nicht-fungiblen Token (NFTs) ermöglicht.</li>
+                </ol>
+            </h3>
+        </h2>
+        <h2 class="krypto-text-u-u" margin-top="0" padding-top="0">
+            Du möchtest Ethereum in Euro umrechnen?
+        </h2>
+        <coingecko-coin-converter-widget  coin-id="ethereum" currency="eur" background-color="#d3e1e2" font-color="#48d6db" locale="de" width="100%"></coingecko-coin-converter-widget>
+    </main>
+</body>
+</html>

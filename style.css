@@ -1,0 +1,250 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  background: #D3E1E2;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #407C87;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #EEF1F6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #EEF1F6;
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #407C87;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #A5DBDD;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #D3E1E2;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Burger */
+#burger-icon{
+  width: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Header */
+.header-text{
+  display: block;
+  float: left;
+  text-align: left;
+  margin: 10px;
+  padding-top: 4px; padding-bottom: 4px;
+  font-size: 27px;
+  color: #EEF1F6;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+/* Nested dropdown container */
+.nested-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Nested dropdown content (hidden by default) */
+.nested-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #A5DBDD;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 100%;
+  top: 0;
+}
+
+/* Show the nested dropdown menu on hover */
+.nested-dropdown:hover .nested-dropdown-content {
+  display: block;
+}
+
+.krypto-text-above{
+  color: #A5DBDD;
+  padding: 50px;
+  margin: 0;
+  margin-bottom: 0;
+  background-color: #366770;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+}
+
+.krypto-text-under{
+  color: #A5DBDD;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  margin-bottom: 0;
+  background-color: #366770;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+}
+
+.krypto-text-u-u{
+  color: #A5DBDD;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  margin-bottom: 0;
+  background-color: #366770;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+}
+
+.cg-widget-container{
+  width: 100%;
+}
+
+.drpdn{
+  height: 30px;
+  mix-blend-mode: color-burn;
+
+}
+
+#result-list{
+  list-style: none;
+  font-size: 30px;
+  color: #407C87;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+}
+
+#result-list li{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#result-list ul{
+  list-style: none;
+  font-size: 25px;
+  text-align: center;
+}
+
+#search-input{
+  background: #366770;
+  color: #D3E1E2;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-align: center;
+  height: 25px;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+}
+
+#search-input::placeholder{
+  color: #D3E1E2;
+}
+
+.Suche-Text{
+  margin-left: 10px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+}
+
+.button-suche{
+  border-radius: 10px;
+  background-color: #366770;
+  color: #D3E1E2;
+  height: 56px;
+  border-style: none;
+  width: 80px;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+}
+
+table caption{
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  font-size: larger;
+}
+
+#tbl{
+  width: 100%;
+}
+
+table{
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+}
+
+#Range{
+  margin: 0;
+  text-align: right;
+}
+
+#Range-ID{
+  margin: 0;
+  text-align: right;
+}
