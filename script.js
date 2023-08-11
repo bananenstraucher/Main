@@ -73,10 +73,6 @@ if (range) {
             <td>${loadedData[0][2]}</td>
             <td>|</td>
             <td>${loadedData[0][3]}</td>
-            <td>|</td>
-            <td>${loadedData[0][4]}</td>
-            <td>|</td>
-            <td>${loadedData[0][5]}</td>
             `;
             table.appendChild(columnHeaders);
 
