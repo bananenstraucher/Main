@@ -12,6 +12,41 @@
     <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script>
     <script src="script.js"></script>
     <title>Maxfel</title>
+    <style>
+        .header-text::after{
+            content: "Maxfel | Krypto | Litecoin";
+        }
+
+        .header-text::before{
+            content: "";
+            display: inline-block;
+            background-image: url('path-to-your-image.jpg');
+            background-size: 20px 20px; /* Die Größe des Bildes */
+            width: 20px; /* Breite des Bildes */
+            height: 20px; /* Höhe des Bildes */
+            background-repeat: no-repeat;
+            vertical-align: middle; /* Ausrichtung mit dem Text */
+            margin-right: 5px; /* Ein wenig Abstand zum Text, sodass das Bild vor dem Text steht */
+        }
+
+        @media (max-width: 450px) {
+            .header-text::after {
+                content: "Litecoin";
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .header-text::before{
+                background-image: url(logo_icon.jpg);
+                background-size: 40px;
+                width: 40px;
+                height: 40px;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                margin-right: 5px;
+                border-radius: 10px;            
+            }
+        }
+    </style>
 </head>
 <body>
     <navbar>
@@ -23,7 +58,7 @@
                 <div class="dropdown-content">
                     <a href="index.html">Home
                     </a>
-                    <a href="news.html">News
+                    <a href="login.html">Login
                     </a>
                     <div class="nested-dropdown">
                         <a>Krypto
@@ -43,7 +78,7 @@
                     </a>
                 </div>
             </div>
-            <h3 class="header-text">Maxfel | Krypto | Litecoin</h3>
+            <h3 class="header-text"></h3>
         </div>
     </navbar>
 

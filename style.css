@@ -4,6 +4,8 @@ html, body{
   top: 0;
   left: 0;
   background: #D3E1E2;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Navbar container */
@@ -228,7 +230,9 @@ table caption{
 }
 
 #tbl{
+  float: left;
   width: 100%;
+  padding: 0px;
 }
 
 table{
@@ -243,14 +247,83 @@ table{
 #Range{
   margin: 0;
   text-align: right;
+  font-size: xx-small;
+  padding: 0;
 }
 
 #Range-ID{
   margin: 0;
   text-align: right;
+  font-size: xx-small;
+  padding: 0;
 }
 
 td{
   font-size: x-large;
-  line-height: 17px;
+  line-height: 18px;
+}
+
+.header-list{
+  list-style: none;
+  display: inline;
+}
+
+.login-btn-header{
+  float: right;
+  text-align: left;
+  margin: 10px;
+  padding-top: 4px; padding-bottom: 4px;
+  font-size: 20px;
+  color: #EEF1F6;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+#login-btn{
+  height: 30px;
+  width: 60px;
+  text-align: center;
+  background: #A5DBDD;
+  color: #366770;
+  border-style: hidden;
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+#login-btn:active{
+  border-style: groove;
+  background: #366770;
+  color: #A5DBDD;
+  border-style: hidden;
+  border-radius: 10px;
+}
+
+.div-login-main{
+  border-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  display: inline-block;
+  overflow: hidden;
+  background: #306b75;
+  color: #a2bebe;
+  border-radius: 20px;
+}
+
+.div-login-main input{
+  border-radius: 6px;
+  border-style: hidden;
+  padding: 10px;
+  background: #D3E1E2;
+}
+
+.div-login-main label{
+  font-family: 'Runik', sans-serif;
+  font-weight: 300;
 }

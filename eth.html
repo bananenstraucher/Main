@@ -12,6 +12,36 @@
     <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script>
     <script src="script.js"></script>
     <title>Maxfel</title>
+    <style>
+        .header-text::after{
+            content: "Maxfel | Krypto | Ethereum";
+        }
+
+        .header-text::before{
+            content: "";
+            display: inline-block;
+            vertical-align: middle; /* Ausrichtung mit dem Text */
+            margin-right: 5px; /* Ein wenig Abstand zum Text, sodass das Bild vor dem Text steht */
+        }
+
+        @media (max-width: 450px) {
+            .header-text::after {
+                content: "Ethereum";
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .header-text::before{
+                background-image: url(logo_icon.jpg);
+                background-size: 40px;
+                width: 40px;
+                height: 40px;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                margin-right: 5px;
+                border-radius: 10px;            
+            }
+        }
+    </style>
 </head>
 <body>
     <navbar>
@@ -23,7 +53,7 @@
                 <div class="dropdown-content">
                     <a href="index.html">Home
                     </a>
-                    <a href="news.html">News
+                    <a href="login.html">Login
                     </a>
                     <div class="nested-dropdown">
                         <a>Krypto
@@ -43,7 +73,7 @@
                     </a>
                 </div>
             </div>
-            <h3 class="header-text">Maxfel | Krypto | Ethereum</h3>
+            <h3 class="header-text"></h3>
         </div>
     </navbar>
 
@@ -51,8 +81,6 @@
         <h3 class="krypto-text-above">
             Ethereum ist eine dezentrale Blockchain-Plattform, die es Entwicklern ermöglicht, Smart Contracts zu erstellen und dezentrale Anwendungen (DApps) zu entwickeln. Im Gegensatz zu Bitcoin, das hauptsächlich als digitales Zahlungsmittel dient, bietet Ethereum eine erweiterte Funktionalität und ermöglicht die Erstellung von Anwendungen auf der Blockchain.
             <br>
-            <br>
-            Die Kryptowährung Ethereum selbst wird als "Ether" bezeichnet und ist die native Kryptowährung der Ethereum-Plattform. Ether wird verwendet, um Transaktionen auf der Ethereum-Blockchain durchzuführen, Ressourcen innerhalb des Netzwerks zu bezahlen und Smart Contracts auszuführen.
         </h3>
         <div class="cg-widget-container">
             <coingecko-coin-price-chart-widget

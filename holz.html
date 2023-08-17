@@ -4,26 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://apis.google.com/js/api.js"></script>
-    <link rel="shortcut icon" href="/icons/maxfel.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/logo_icon.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Rubik:wght@500&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <title>Maxfel</title>
+
+    <style>
+        .header-text::after{
+            content: "Maxfel | Holz";
+        }
+
+        .header-text::before{
+            content: "";
+            display: inline-block;
+            vertical-align: middle; /* Ausrichtung mit dem Text */
+            margin-right: 5px; /* Ein wenig Abstand zum Text, sodass das Bild vor dem Text steht */
+        }
+
+        @media (max-width: 450px) {
+            .header-text::after {
+                content: "Holz";
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .header-text::before{
+                background-image: url(logo_icon.jpg);
+                background-size: 40px;
+                width: 40px;
+                height: 40px;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                margin-right: 5px;
+                border-radius: 10px;            
+            }
+        }
+    </style>
 </head>
 <body>
     <navbar>
         <div class="navbar">
             <div class="dropdown">
-                <button class="dropbtn"> <img src="speisekarte.jpg" id="burger-icon" class="drpdn">
+                <button class="dropbtn"> <img src="/speisekarte.jpg" id="burger-icon" class="drpdn">
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
                     <a href="index.html">Home 
                     </a>
-                    <a href="news.html">News
+                    <a href="login.html">Login
                     </a>
                     <div class="nested-dropdown">
                         <a>Krypto
@@ -43,7 +74,12 @@
                     </a>
                 </div>
             </div>
-            <h3 class="header-text">Maxfel | Holz</h3>
+            <ul class="header-list">
+                <li class="header-text"></li>
+                <li class="login-btn-header">
+                    <button id="login-btn" onclick="window.location.href='login.html';">Login</button>
+                </li>
+            </ul>
         </div>
     </navbar>
     <div id="tbl">
@@ -58,6 +94,10 @@
             <th>Holzart:</th>
             <th>|</th>
             <th>RM:</th>
+            <th>|</th>
+            <th>kWh/RM:</th>
+            <th>|</th>
+            <th>kWh:</th>
         </table>
     </div>
     <br>

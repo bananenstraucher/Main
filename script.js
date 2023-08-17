@@ -73,10 +73,15 @@ if (range) {
             <td>${loadedData[0][2]}</td>
             <td>|</td>
             <td>${loadedData[0][3]}</td>
+            <td>|</td>
+            <td>${loadedData[0][4]}</td>
+            <td>|</td>
+            <td>${loadedData[0][5]}</td>
             `;
             table.appendChild(columnHeaders);
 
             document.getElementById('Range').innerHTML = range
+            
         }).catch((err) => {
             console.log(err.error.message);
         });

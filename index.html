@@ -11,6 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Rubik:wght@500&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <title>Maxfel</title>
+    <style>
+        .header-text::after{
+            content: "Maxfel | Home";
+        }
+
+        .header-text::before{
+            content: "";
+            display: inline-block;
+            vertical-align: middle; /* Ausrichtung mit dem Text */
+            margin-right: 5px; /* Ein wenig Abstand zum Text, sodass das Bild vor dem Text steht */
+        }
+
+        @media (max-width: 450px) {
+            .header-text::after {
+                content: "Home";
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .header-text::before{
+                background-image: url(logo_icon.jpg);
+                background-size: 40px;
+                width: 40px;
+                height: 40px;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                margin-right: 5px;
+                border-radius: 10px;            
+            }
+        }
+    </style>
 </head>
 <body>
     <navbar>
@@ -22,7 +52,7 @@
                 <div class="dropdown-content">
                     <a href="index.html">Home 
                     </a>
-                    <a href="news.html">News
+                    <a href="login.html">Login
                     </a>
                     <div class="nested-dropdown">
                         <a>Krypto
@@ -42,7 +72,7 @@
                     </a>
                 </div>
             </div>
-            <h3 class="header-text">Maxfel | Home</h3>
+            <h3 class="header-text"></h3>
         </div>
     </navbar>
 </body>

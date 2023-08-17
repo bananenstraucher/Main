@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <link rel="shortcut icon" href="/logo_icon.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Rubik:wght@500&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <title>Maxfel</title>
     <style>
+        body::before{
+            content: "";
+            background-image: url('logo.jpg'); /* Ändern Sie den Pfad zu Ihrem Bild */
+            filter: blur(8px);  /* Einstellen des Blur-Effekts */
+            position: fixed;    /* Fixierte Positionierung sorgt dafür, dass sich der Hintergrund beim Scrollen nicht bewegt */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;  /* Setzt den Hintergrund hinter den Inhalt */
+            /* Diese Einstellungen verhindern, dass sich das Bild in der Größe ändert */
+            background-size: cover;  
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        
         .header-text::after{
-            content: "Maxfel | News";
+            content: "Maxfel | Login";
         }
 
         .header-text::before{
@@ -24,7 +42,7 @@
 
         @media (max-width: 450px) {
             .header-text::after {
-                content: "News";
+                content: "Login";
                 display: inline-block;
                 vertical-align: middle;
             }
@@ -39,17 +57,21 @@
                 border-radius: 10px;            
             }
         }
+
+        body, html{
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
     <navbar>
         <div class="navbar">
             <div class="dropdown">
-                <button class="dropbtn"> <img src="speisekarte.jpg" id="burger-icon" class="drpdn">
+                <button class="dropbtn"> <img src="/speisekarte.jpg" id="burger-icon" class="drpdn">
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="index.html">Home
+                    <a href="index.html">Home 
                     </a>
                     <a href="login.html">Login
                     </a>
@@ -74,5 +96,26 @@
             <h3 class="header-text"></h3>
         </div>
     </navbar>
+    <div class="div-login-main">
+        <form>
+            <label>Vorname:</label><br>
+            <input type="text" placeholder="Max"><br>
+
+            <label>Nachname:</label><br>
+            <input type="text" placeholder="Mustermann"><br>
+
+            <label>Telefonnummer:</label><br>
+            <input type="number"><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="max-mustermann@mail.com"><br>
+
+            <label>Passwort</label><br>
+            <input type="password" placeholder="passwort12345#"><br>
+            
+            <label></label><br>
+            <input type="submit" value="Anmelden">
+        </form>
+    </div>
 </body>
 </html>
