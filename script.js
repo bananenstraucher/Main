@@ -1,3 +1,44 @@
+function insertRepeatedContent(targetElementId) {
+    var contentDiv = document.getElementById(targetElementId);
+    contentDiv.innerHTML = 
+    '<div class="navbar">\
+        <div class="dropdown">\
+            <button class="dropbtn"> <img src="/speisekarte.jpg" id="burger-icon" class="drpdn">\
+            <i class="fa fa-caret-down"></i>\
+            </button>\
+            <div class="dropdown-content">\
+                <a href="index.html">Home \
+                </a>\
+                <a href="login.html">Login\
+                </a>\
+                <div class="nested-dropdown">\
+                    <a>Krypto\
+                    </a>\
+                    <div class="nested-dropdown-content">\
+                        <a href="btc.html">Bitcoin\
+                        </a>\
+                        <a href="eth.html">Ethereum\
+                        </a>\
+                        <a href="ltc.html">Litecoin\
+                        </a>\
+                    </div>\
+                </div>\
+                <a href="holz.html">Holz\
+                </a>\
+                <a href="quellen.html">Quellen\
+                </a>\
+            </div>\
+        </div>\
+        <h3 class="header-text"></h3>\
+    </div>';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    insertRepeatedContent('wiederholender-Content');
+    // Sie können die Funktion auch für andere Elemente aufrufen
+    // insertRepeatedContent('anotherElementId');
+});
+
 const start = () => {
     // Initialize the JavaScript client library
     gapi.client.init({
@@ -26,6 +67,10 @@ const start = () => {
         <th>${loadedData[0][2]}</th>
         <th>|</th>
         <th>${loadedData[0][3]}</th>
+        <th>|</th>
+        <th>${loadedData[0][4]}</th>
+        <th>|</th>
+        <th>${loadedData[0][5]}</th>
         `;
         table.appendChild(columnHeaders);
     }).catch((err) => {
@@ -69,6 +114,10 @@ if (range) {
             <td>${loadedData[0][2]}</td>
             <td>|</td>
             <td>${loadedData[0][3]}</td>
+            <td>|</td>
+            <td>${loadedData[0][4]}</td>
+            <td>|</td>
+            <td>${loadedData[0][5]}</td>
             `;
             table.appendChild(columnHeaders);
 
@@ -79,3 +128,4 @@ if (range) {
         });
     });
 }
+

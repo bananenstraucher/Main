@@ -1,3 +1,4 @@
+/* Grundwebsite */
 html, body{
   margin: 0;
   padding: 0;
@@ -15,7 +16,7 @@ html, body{
   font-family: Arial;
 }
 
-/* Links inside the navbar */
+/* Links in Navbar */
 .navbar a {
   float: left;
   font-size: 16px;
@@ -25,7 +26,7 @@ html, body{
   text-decoration: none;
 }
 
-/* The dropdown container */
+/* Dropdown container */
 .dropdown {
   float: left;
   overflow: hidden;
@@ -44,12 +45,12 @@ html, body{
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a background color to navbar links on hover */
+/* Background bei Hover auf Navbar */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #407C87;
 }
 
-/* Dropdown content (hidden by default) */
+/* Dropdown content (normal versteckt) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -59,7 +60,7 @@ html, body{
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Links in Dropdown */
 .dropdown-content a {
   float: none;
   color: black;
@@ -69,12 +70,12 @@ html, body{
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
+/* Dropdown Hover Background */
 .dropdown-content a:hover {
   background-color: #D3E1E2;
 }
 
-/* Show the dropdown menu on hover */
+/* Dropdown bei Hover anzeigen */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -99,13 +100,13 @@ html, body{
   font-weight: 500;
 }
 
-/* Nested dropdown container */
+/* Unter-Dropdown-Container */
 .nested-dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Nested dropdown content (hidden by default) */
+/* Unter-Dropdown-Inhalt (normal versteckt) */
 .nested-dropdown-content {
   display: none;
   position: absolute;
@@ -117,11 +118,12 @@ html, body{
   top: 0;
 }
 
-/* Show the nested dropdown menu on hover */
+/* Unter-Dropdown bei hover zeigen */
 .nested-dropdown:hover .nested-dropdown-content {
   display: block;
 }
 
+/* Krypto-Text Einleitung */
 .krypto-text-above{
   color: #A5DBDD;
   padding: 50px;
@@ -132,6 +134,7 @@ html, body{
   font-weight: 200;
 }
 
+/* Krypto-Text Daten */
 .krypto-text-under{
   color: #A5DBDD;
   padding: 10px;
@@ -144,6 +147,7 @@ html, body{
   font-weight: 200;
 }
 
+/* Krypto-Text Merkmale */
 .krypto-text-u-u{
   color: #A5DBDD;
   padding-top: 30px;
@@ -156,85 +160,33 @@ html, body{
   font-weight: 400;
 }
 
+/* Krypto-Preis Widget */
 .cg-widget-container{
   width: 100%;
 }
 
+/* Burger-Icon */
 .drpdn{
   height: 30px;
   mix-blend-mode: color-burn;
 
 }
 
-#result-list{
-  list-style: none;
-  font-size: 30px;
-  color: #407C87;
-  text-align: center;
-  font-family: 'Kanit', sans-serif;
-  font-weight: 300;
-}
-
-#result-list li{
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-#result-list ul{
-  list-style: none;
-  font-size: 25px;
-  text-align: center;
-}
-
-#search-input{
-  background: #366770;
-  color: #D3E1E2;
-  border-radius: 10px;
-  margin-left: 10px;
-  text-align: center;
-  height: 25px;
-  border: none;
-  padding: 1rem;
-  border-radius: 1rem;
-  font-size: 20px;
-  font-family: 'Kanit', sans-serif;
-  font-weight: 300;
-}
-
-#search-input::placeholder{
-  color: #D3E1E2;
-}
-
-.Suche-Text{
-  margin-left: 10px;
-  font-family: 'Kanit', sans-serif;
-  font-weight: 300;
-}
-
-.button-suche{
-  border-radius: 10px;
-  background-color: #366770;
-  color: #D3E1E2;
-  height: 56px;
-  border-style: none;
-  width: 80px;
-  font-size: 20px;
-  font-family: 'Kanit', sans-serif;
-  font-weight: 300;
-}
-
+/* Holz-Fach: */
 table caption{
   font-family: 'Kanit', sans-serif;
   font-weight: 600;
   font-size: larger;
 }
 
+/* Holz-Fach Div */
 #tbl{
   float: left;
   width: 100%;
   padding: 0px;
 }
 
+/* Table */
 table{
   text-align: center;
   width: 100%;
@@ -244,6 +196,7 @@ table{
   line-height: 15px;
 }
 
+/* Range-Anzeige (JS) */
 #Range{
   margin: 0;
   text-align: right;
@@ -251,6 +204,7 @@ table{
   padding: 0;
 }
 
+/* Range-ID: */
 #Range-ID{
   margin: 0;
   text-align: right;
@@ -258,16 +212,19 @@ table{
   padding: 0;
 }
 
+/* TD_Inhalt (JS) */
 td{
-  font-size: xx-large;
+  font-size: x-large;
   line-height: 18px;
 }
 
+/* Navbar-Text */
 .header-list{
   list-style: none;
   display: inline;
 }
 
+/* Navbar-Login-Button-Aussen */
 .login-btn-header{
   float: right;
   text-align: left;
@@ -279,6 +236,7 @@ td{
   font-weight: 300;
 }
 
+/* Navbar-Login-Button */
 #login-btn{
   height: 30px;
   width: 60px;
@@ -294,6 +252,7 @@ td{
   font-weight: 300;
 }
 
+/* Navbar-Login-Button wenn Aktiv */
 #login-btn:active{
   border-style: groove;
   background: #366770;
@@ -302,6 +261,7 @@ td{
   border-radius: 10px;
 }
 
+/* Login-Div-Aussen */
 .div-login-main{
   border-style: none;
   position: absolute;
@@ -316,6 +276,7 @@ td{
   border-radius: 20px;
 }
 
+/* Login-Input-Felder */
 .div-login-main input{
   border-radius: 6px;
   border-style: hidden;
@@ -323,6 +284,7 @@ td{
   background: #D3E1E2;
 }
 
+/* Login-Label über Input-Felder */
 .div-login-main label{
   font-family: 'Runik', sans-serif;
   font-weight: 300;
