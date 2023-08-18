@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Maxfel</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3392180112999452"
+        crossorigin="anonymous"></script>
+    <style>
+        .header-text::after{
+            content: "Maxfel | Ads";
+        }
+
+        .header-text::before{
+            content: "";
+            display: inline-block;
+            vertical-align: middle; /* Ausrichtung mit dem Text */
+            margin-right: 5px; /* Ein wenig Abstand zum Text, sodass das Bild vor dem Text steht */
+        }
+
+        @media (max-width: 450px) {
+            .header-text::after {
+                content: "Ads";
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .header-text::before{
+                background-image: url(logo_icon.jpg);
+                background-size: 40px;
+                width: 40px;
+                height: 40px;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                margin-right: 5px;
+                border-radius: 10px;            
+            }
+        }
+    </style>
+</head>
+<body>
+    <navbar>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn"> <img src="speisekarte.jpg" id="burger-icon" class="drpdn">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home
+                    </a>
+                    <a href="login.html">Login
+                    </a>
+                    <div class="nested-dropdown">
+                        <a>Krypto
+                        </a>
+                        <div class="nested-dropdown-content">
+                            <a href="btc.html">Bitcoin
+                            </a>
+                            <a href="eth.html">Ethereum
+                            </a>
+                            <a href="ltc.html">Litecoin
+                            </a>
+                        </div>
+                    </div>
+                    <a href="holz.html">Holz
+                    </a>
+                    <a href="quellen.html">Quellen
+                    </a>
+                </div>
+            </div>
+            <h3 class="header-text"></h3>
+        </div>
+    </navbar>
+</body>
+</html>
