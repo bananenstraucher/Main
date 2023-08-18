@@ -13,6 +13,7 @@ html, body{
 .navbar {
   background-color: #407C87;
   font-family: Arial;
+  overflow:hidden
 }
 
 /* Links in Navbar */
