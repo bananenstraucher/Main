@@ -3,7 +3,7 @@ function insertRepeatedContent(targetElementId) {
     contentDiv.innerHTML = 
     '<div class="navbar">\
         <div class="dropdown">\
-            <button class="dropbtn"> <img src="/speisekarte.jpg" id="burger-icon" class="drpdn">\
+            <button class="dropbtn"> <img src="speisekarte.jpg" id="burger-icon" class="drpdn">\
             <i class="fa fa-caret-down"></i>\
             </button>\
             <div class="dropdown-content">\
