@@ -39,6 +39,36 @@ document.addEventListener('DOMContentLoaded', function() {
     // insertRepeatedContent('anotherElementId');
 });
 
+window.addEventListener('DOMContentLoaded', (event) => {
+    const gehashtesPasswort = "$2a$20$vrOELLvVyODK2g4ZFPxCKeDVzCJc4G74CewxiIWBPZ4Rc3ISHiZjq"; 
+
+    // Funktion, um einen bestimmten Cookie zu erhalten
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    // Überprüfen Sie, ob der Authentifizierungscookie gesetzt ist
+    const authCookie = getCookie("auth");
+
+    if (authCookie === "true") {
+        document.body.style.display = "block";
+    } else {
+        const urlParams = new URLSearchParams(window.location.search);
+        const passwParam = urlParams.get('passw');
+
+        if (bcrypt.compareSync(passwParam, gehashtesPasswort)) {
+            document.body.style.display = "block";
+            
+            // Setzen Sie den Authentifizierungscookie
+            document.cookie = "auth=true; max-age=2678400";  // Gültig für 1 Stunde (3600 Sekunden)
+        } else {
+            alert('Ungültiges Passwort');
+        }
+    }
+});
+
 const start = () => {
     // Initialize the JavaScript client library
     gapi.client.init({
