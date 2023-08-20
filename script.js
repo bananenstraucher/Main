@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    const gehashtesPasswort = "$2a$20$vrOELLvVyODK2g4ZFPxCKeDVzCJc4G74CewxiIWBPZ4Rc3ISHiZjq"; 
+    const gehashtesPasswort = "$2a$20$4ZSwgOC3ceni/z09QRBDnua0RHoHzpdF44pj4LD4Ec0g16SFmG1Jy"; 
 
     // Funktion, um einen bestimmten Cookie zu erhalten
     function getCookie(name) {
