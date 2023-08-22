@@ -34,7 +34,7 @@ function insertRepeatedContent(targetElementId) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    insertRepeatedContent('repeatedContent');
+    insertRepeatedContent('wiederholender-Content');
     // Sie können die Funktion auch für andere Elemente aufrufen
     // insertRepeatedContent('anotherElementId');
 });
