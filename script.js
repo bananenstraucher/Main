@@ -1,6 +1,6 @@
-function insertRepeatedContent(targetElementId) {
-    var contentDiv = document.getElementById(targetElementId);
-    contentDiv.innerHTML = 
+function insertNavbarContent(targetElementId) {
+    var navbar = document.getElementById(targetElementId);
+    navbar.innerHTML = 
     '<div class="navbar">\
         <div class="dropdown">\
             <button class="dropbtn"> <img src="speisekarte.jpg" id="burger-icon" class="drpdn">\
@@ -34,7 +34,7 @@ function insertRepeatedContent(targetElementId) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    insertRepeatedContent('wiederholender-Content');
+    insertNavbarContent('wiederholender-Content');
     // Sie können die Funktion auch für andere Elemente aufrufen
     // insertRepeatedContent('anotherElementId');
 });
