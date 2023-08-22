@@ -33,6 +33,12 @@ function insertRepeatedContent(targetElementId) {
     </div>';
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    insertRepeatedContent('repeatedContent');
+    // Sie können die Funktion auch für andere Elemente aufrufen
+    // insertRepeatedContent('anotherElementId');
+});
+
 const start = () => {
     // Initialize the JavaScript client library
     gapi.client.init({
