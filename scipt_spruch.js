@@ -32,7 +32,7 @@ async function neuerSpruch() {
             linkElement.href = ausgewaehlterSpruch.link;
 
             // Setzen Sie das Icon-Bild basierend auf dem Icon-Text
-            iconElement.src = `https://bananenstraucher.github.io/Main/icons_sprueche/${ausgewaehlterSpruch.iconText}.png`;
+            iconElement.src = `/icons_sprueche/${ausgewaehlterSpruch.iconText}.png`;
             iconElement.alt = ausgewaehlterSpruch.iconText;
 
         } else {
