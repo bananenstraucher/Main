@@ -2,7 +2,7 @@ async function holeSprueche() {
     try {
         const response = await fetch('sprueche.txt');
         const text = await response.text();
-        return text.split(';').filter(eintrag => eintrag.split('|').length === 3).map(eintrag => {
+        return text.split('-').filter(eintrag => eintrag.split('|').length === 3).map(eintrag => {
             const [spruch, iconText, link] = eintrag.split('|');
             return { 
                 spruch: spruch.trim(), 
