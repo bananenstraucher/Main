@@ -3,106 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxfel-Home</title>
-    <style>
-        .logo{
-            display: inline;
-        }
-        .icons{
-            display: inline;
-            padding: 0;
-        }
-
-        .icons a{
-            text-decoration: none;
-        }
-
-        .container{
-            display: grid; 
-            grid-template-columns: 1fr auto;
-            align-items: start;
-        }
-
-        .left, .right{
-            list-style: none; 
-            margin: 0%; 
-            padding: 0%;
-        }
-
-        .right{
-            position: relative;
-            top: 5px;
-            right: 5px;
-            transition: all 0.s;
-        }
-
-        .right:hover{
-            position: relative;
-            top: 0;
-        }
-
-        .right button{
-            background: #2e5961;
-            margin: -2px;
-            padding: 0px;
-            border-style: none;
-            width: min-content;
-            transition: transform 1s;
-        }
-
-        .right button:hover{
-            background: #A5DBDD;
-            position: relative;
-            top: 0;
-            width: min-content;
-            height: 60px;
-            transform: scaleX(1.1);
-            .text-icons{
-                display: block;
-            }
-            .icons-raw{
-                display: none;
-            }
-        }
-
-        .text-icons{
-            color: #252020;
-            display: none;
-            height: 50px;
-        }
-        ::-webkit-scrollbar{
-            width: 10px;
-            background-color: #302744;
-        }
-
-        ::-webkit-scrollbar-track{
-            background: #302744;
-            border-radius: 90px;
-        }
-
-        ::-webkit-scrollbar-thumb{
-            background: rgb(154, 163, 163);
-            border-radius: 90px;
-        }
-
-        ::-webkit-scrollbar-corner{
-            background: #302744;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Maxfel-Quellen</title>
 </head>
-<body style="margin: 0%; padding: 0%;">
-    <header style="background-color: #2e5961; width: 100%; height: 59px;">
+<body>
+    <header>
         <div class="container">
             <ul class="left">
                 <li class="logo">
-                    <img src="Icons/Sign.svg" style="height: 50px; position: relative; top: 5px; left: 5px;">
+                    <img src="Icons/Sign.svg">
                 </li>
             </ul>
             <ul class="right">
                 <li class="icons">
                     <button>
                         <a href="index.html"> 
-                            <img src="Icons/unactive/Home_Button.svg" height="50px" class="icons-raw">
+                            <img src="Icons/unactive/Home_Button.svg" class="icons-raw">
                             <img src="Icons/unactive_text/Home_Button_Text.svg" class="text-icons">
                         </a>
                     </button>
@@ -110,7 +26,7 @@
                 <li class="icons">
                     <button>
                         <a href="holz.html">
-                            <img src="Icons/unactive/Holz_Button.svg" height="50px" class="icons-raw">
+                            <img src="Icons/unactive/Holz_Button.svg" class="icons-raw">
                             <img src="Icons/unactive_text/Holz_Button_Text.svg" class="text-icons">
                         </a>
                     </button>
@@ -118,7 +34,7 @@
                 <li class="icons">
                     <button>
                         <a href="login.html">
-                            <img src="Icons/unactive/Login_Button.svg" height="50px" class="icons-raw">
+                            <img src="Icons/unactive/Login_Button.svg" class="icons-raw">
                             <img src="Icons/unactive_text/Login_Button_Text.svg" class="text-icons">
                         </a>
                     </button>
@@ -126,7 +42,7 @@
                 <li class="icons">
                     <button>
                         <a href="krypto.html">
-                            <img src="Icons/unactive/Krypto_Button.svg" height="50px" class="icons-raw">
+                            <img src="Icons/unactive/Krypto_Button.svg" class="icons-raw">
                             <img src="Icons/unactive_text/Krypto_Button_Text.svg" class="text-icons">
                         </a>
                     </button>
@@ -134,7 +50,7 @@
                 <li class="icons">
                     <button>
                         <a href="quellen.html">
-                            <img src="Icons/active/Quellen_Button.svg" height="50px" class="icons-raw">
+                            <img src="Icons/active/Quellen_Button.svg" class="icons-raw">
                             <img src="Icons/active_text/Quellen_Button_Text.svg" class="text-icons">
                         </a>
                     </button>
@@ -142,7 +58,7 @@
             </ul>
         </div>
     </header>
-    <main style="background: linear-gradient(180deg, rgba(72,168,164,1) 0%, rgba(111,120,177,1) 100%); height: 910px">
+    <main>
     </main>
 </body>
 </html>
