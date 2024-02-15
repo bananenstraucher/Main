@@ -5,189 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxfel-Holz</title>
     <script src="https://apis.google.com/js/api.js"></script>
-    <script src="script-holz.js"></script>
-    <style>
-        .logo{
-            display: inline;
-        }
-        .icons{
-            display: inline;
-            padding: 0;
-        }
-
-        .icons a{
-            text-decoration: none;
-        }
-
-        .container{
-            display: grid; 
-            grid-template-columns: 1fr auto;
-            align-items: start;
-        }
-
-        .left, .right{
-            list-style: none; 
-            margin: 0%; 
-            padding: 0%;
-        }
-
-        .right{
-            position: relative;
-            top: 5px;
-            right: 5px;
-            transition: all 0.s;
-        }
-
-        .right:hover{
-            position: relative;
-            top: 0;
-        }
-
-        .right button{
-            background: #2e5961;
-            margin: -2px;
-            padding: 0px;
-            border-style: none;
-            width: min-content;
-            transition: transform 1s;
-        }
-
-        .right button:hover{
-            background: #A5DBDD;
-            position: relative;
-            top: 0;
-            width: min-content;
-            height: 60px;
-            transform: scaleX(1.1);
-            .text-icons{
-                display: block;
-            }
-            .icons-raw{
-                display: none;
-            }
-        }
-
-        .text-icons{
-            color: #252020;
-            display: none;
-            height: 50px;
-        }
-
-        /* Holz-Fach: */
-        table caption{
-            font-family: 'Kanit', sans-serif;
-            font-weight: 600;
-            font-size: larger;
-        }
-
-        /* Holz-Fach Div */
-        #tbl{
-            float: left;
-            width: 100%;
-            padding: 0px;
-        }
-
-        /* Table */
-        table{
-            text-align: center;
-            width: 100%;
-            margin: auto;
-            font-family: 'Kanit', sans-serif;
-            font-weight: 300;
-        }
-
-        /* Range-Anzeige (JS) */
-        #Range{
-            margin: 0;
-            text-align: right;
-            font-size: xx-small;
-            padding: 0;
-        }
-
-        /* Range-ID: */
-        #Range-ID{
-            margin: 0;
-            text-align: right;
-            font-size: xx-small;
-            padding: 0;
-        }
-
-        /* TD_Inhalt (JS) */
-        td{
-            font-size: x-large;
-            line-height: 18px;
-        }
-
-        ::-webkit-scrollbar{
-            width: 10px;
-            background-color: #302744;
-        }
-
-        ::-webkit-scrollbar-track{
-            background: #302744;
-            border-radius: 90px;
-        }
-
-        ::-webkit-scrollbar-thumb{
-            background: rgb(154, 163, 163);
-            border-radius: 90px;
-        }
-
-        ::-webkit-scrollbar-corner{
-            background: #302744;
-        }
-
-        /* Stile für die Tabelle */
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        /* Stile für die Tabellenzeilen */
-        .data-table tr {
-            background-color: #f2f2f2;
-        }
-
-        /* Stile für gerade Tabellenzeilen */
-        .data-table tr:nth-child(even) {
-            background-color: #ffffff;
-        }
-
-        /* Stile für die Tabellenzellen */
-        .data-table td, .data-table th {
-            border: 1px solid #dddddd;
-            padding: 8px;
-            text-align: left;
-            height: 17px;
-            line-height: 15px;
-            position: relative; /* Position für den Tooltip */
-        }
-
-        .data-table td{
-            font-size: 15px;
-        }
-
-        /* Stile für die Tabellenüberschriften */
-        .data-table th {
-            background-color: #407C87;
-            border-style: none;
-            color: #252020;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_holz.css">
+    <script src="script.js"></script>
 </head>
-<body style="margin: 0%; padding: 0%">
-    <header style="background-color: #2e5961; width: 100%; height: 59px;">
+<body>
+    <header>
         <div class="container">
             <ul class="left">
                 <li class="logo">
-                    <img src="Icons/Sign.svg" style="height: 50px; position: relative; top: 5px; left: 5px;">
+                    <img src="Icons/Sign.svg">
                 </li>
             </ul>
             <ul class="right">
                 <li class="icons">
                     <button>
                         <a href="index.html"> 
-                            <img src="Icons/unactive/Home_Button.svg" height="50px" class="icons-raw">
+                            <img src="Icons/unactive/Home_Button.svg" class="icons-raw">
                             <img src="Icons/unactive_text/Home_Button_Text.svg" class="text-icons">
                         </a>
                     </button>
@@ -195,7 +29,7 @@
                 <li class="icons">
                     <button>
                         <a href="holz.html">
-                            <img src="Icons/active/Holz_Button.svg" height="50px" class="icons-raw">
+                            <img src="Icons/active/Holz_Button.svg" class="icons-raw">
                             <img src="Icons/active_text/Holz_Button_Text.svg" class="text-icons">
                         </a>
                     </button>
@@ -203,7 +37,7 @@
                 <li class="icons">
                     <button>
                         <a href="login.html">
-                            <img src="Icons/unactive/Login_Button.svg" height="50px" class="icons-raw">
+                            <img src="Icons/unactive/Login_Button.svg" class="icons-raw">
                             <img src="Icons/unactive_text/Login_Button_Text.svg" class="text-icons">
                         </a>
                     </button>
@@ -211,7 +45,7 @@
                 <li class="icons">
                     <button>
                         <a href="krypto.html">
-                            <img src="Icons/unactive/Krypto_Button.svg" height="50px" class="icons-raw">
+                            <img src="Icons/unactive/Krypto_Button.svg" class="icons-raw">
                             <img src="Icons/unactive_text/Krypto_Button_Text.svg" class="text-icons">
                         </a>
                     </button>
@@ -219,7 +53,7 @@
                 <li class="icons">
                     <button>
                         <a href="quellen.html">
-                            <img src="Icons/unactive/Quellen_Button.svg" height="50px" class="icons-raw">
+                            <img src="Icons/unactive/Quellen_Button.svg" class="icons-raw">
                             <img src="Icons/unactive_text/Quellen_Button_Text.svg" class="text-icons">
                         </a>
                     </button>
@@ -227,8 +61,8 @@
             </ul>
         </div>
     </header>
-    <main style="background: linear-gradient(180deg, rgba(72,168,164,1) 0%, rgba(111,120,177,1) 100%);">
-        <div id="tbl" style="padding-bottom: 10px;">
+    <main>
+        <div id="tbl">
             <table>
                 <h5 id="Range-ID">ID:</h5>
                 <h5 id="Range"></h5>
@@ -242,8 +76,8 @@
                 <th>RM:</th>
             </table>
         </div>
-        <hr style="background-color: #407C87; height: 5px; border-style: solid;">
-        <table id="data-table" class="data-table" style="padding-top: 10px;">
+        <hr id="Trennlinie">
+        <table id="data-table" class="data-table">
             <!-- Hier werden die Daten aus Google Sheets eingefügt -->
             <th>Name</th>
             <th>Jahr</th>
@@ -252,81 +86,6 @@
             <th>kWh/RM</th>
             <th>kWh</th>
         </table>
-    
-        <script>
-            // Deine Google Sheets API-Key
-            const API_KEY = 'AIzaSyBjejyoA4JplIbca0ElxMQgAkfMJ7c_jAE';
-            // Die Spreadsheet-ID deiner Google Tabelle
-            const SPREADSHEET_ID = '1tJhK_vRxRaQRfJisPXIOe0_XngXRbHBTAy0SJkqP5pA';
-            // Der Bereich, den du auslesen möchtest (z.B. A1:B10)
-            const RANGE = 'Holz!AD3:AL42';
-
-            // Indexe der Spalten, die nicht standardmäßig angezeigt werden sollen
-            const hiddenColumns = [3, 4, 5]; // Hier Spalten 4, 5 und 6 ausblenden (beginnend mit 0)
-            // Indexe der zusätzlichen Spalten, die ausgeblendet werden sollen, wenn die Bildschirmbreite größer als die angegebene Schwelle ist
-            const additionalHiddenColumns = [6, 7, 8]; // Hier Spalten 7, 8 und 9 ausblenden (beginnend mit 0)
-            // Die Schwelle für die Bildschirmbreite, ab der die zusätzlichen Spalten ausgeblendet werden sollen
-            const thresholdWidth = 750; // Anpassen der Schwelle nach Bedarf
-
-            // Funktion zum Abrufen der Daten aus Google Sheets
-            function getSheetData() {
-                fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        // Anzeige der Daten in der HTML-Tabelle
-                        displayData(data.values);
-                    })
-                    .catch(error => console.error('Fehler beim Abrufen der Daten aus Google Sheets:', error));
-            }
-
-            // Funktion zum Anzeigen der Daten in einer HTML-Tabelle
-            function displayData(sheetData) {
-                const table = document.getElementById('data-table');
-                sheetData.forEach(rowData => {
-                    const row = table.insertRow();
-                    rowData.forEach((cellData, index) => {
-                        // Nur Zellen anzeigen, die nicht in der hiddenColumns-Liste sind
-                        if (!hiddenColumns.includes(index)) {
-                            const cell = row.insertCell();
-                            cell.textContent = cellData;
-                            // Wenn die Bildschirmbreite kleiner als die Schwelle ist und die zusätzlichen Spalten in der Liste additionalHiddenColumns enthalten sind, verstecke die Zellen
-                            if (window.innerWidth <= thresholdWidth && additionalHiddenColumns.includes(index)) {
-                                cell.style.display = 'none';
-                            }
-                        }
-                    });
-                });
-            }
-
-            // Überwache das Window-Resize-Ereignis, um die Anzeige der Spalten dynamisch anzupassen
-            window.addEventListener('resize', () => {
-                const table = document.getElementById('data-table');
-                const headerRow = table.rows[0];
-                const rows = table.rows;
-                const cells = headerRow.cells;
-
-                for (let i = 0; i < cells.length; i++) {
-                    // Verstecke die Zellen in der Tabelle, die in der hiddenColumns-Liste enthalten sind
-                    if (hiddenColumns.includes(i)) {
-                        cells[i].style.display = window.innerWidth <= thresholdWidth ? 'none' : '';
-                        for (let j = 0; j < rows.length; j++) {
-                            rows[j].cells[i].style.display = window.innerWidth <= thresholdWidth ? 'none' : '';
-                        }
-                    }
-                    // Verstecke die zusätzlichen Zellen in der Tabelle, die in der additionalHiddenColumns-Liste enthalten sind
-                    if (additionalHiddenColumns.includes(i)) {
-                        cells[i].style.display = window.innerWidth <= thresholdWidth ? 'none' : '';
-                        for (let j = 0; j < rows.length; j++) {
-                            rows[j].cells[i].style.display = window.innerWidth <= thresholdWidth ? 'none' : '';
-                        }
-                    }
-                }
-            });
-
-            // Lade die Daten, wenn die Seite geladen ist
-            window.onload = getSheetData;
-
-        </script>        
     </main>
 </body>
 </html>
