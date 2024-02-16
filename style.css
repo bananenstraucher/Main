@@ -169,16 +169,6 @@ td {
     padding-top: 10px;
 }
 
-/* Stile für die Tabellenzeilen */
-.data-table tr {
-    background-color: #f2f2f2;
-}
-
-/* Stile für gerade Tabellenzeilen */
-.data-table tr:nth-child(even) {
-    background-color: #ffffff;
-}
-
 /* Stile für die Tabellenzellen */
 .data-table td, .data-table th {
     border: 1px solid #dddddd;
