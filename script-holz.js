@@ -7,7 +7,7 @@ const start = () => {
         // Erster Bereich
         return gapi.client.sheets.spreadsheets.values.get({
             spreadsheetId: '1tJhK_vRxRaQRfJisPXIOe0_XngXRbHBTAy0SJkqP5pA',
-            range: 'Tabellenblatt1!W2:AB42',
+            range: 'Tabellenblatt1!AR2:AU42',
         })
     }).then((response) => {
         // Parse the response data

@@ -7,7 +7,7 @@
     <script src="https://apis.google.com/js/api.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_holz.css">
-    <script src="script-holz.js"></script>
+    <!-- <script src="script-holz.js"></script> -->
     <link rel="shortcut icon" href="assets/LogoNewGreen/icons/4.png" type="image/x-icon">
     <style>
     </style>
@@ -21,34 +21,6 @@
                 </li>
             </ul>
             <ul class="right">
-                <li class="icons">
-                    <button>
-                        <a href="index.html"> 
-                            <img src="assets/LogoNewGreen/icons/Icon_House.svg" class="icons-raw">
-                        </a>
-                    </button>
-                </li>
-                <li class="icons">
-                    <button>
-                        <a href="holz.html">
-                            <img src="assets/LogoNewGreen/icons/Holz_active.svg" class="icons-raw">
-                        </a>
-                    </button>
-                </li>
-                <li class="icons">
-                    <button>
-                        <a href="login.html">
-                            <img src="assets/LogoNewGreen/icons/Key.svg" class="icons-raw">
-                        </a>
-                    </button>
-                </li>
-                <li class="icons">
-                    <button>
-                        <a href="krypto.html">
-                            <img src="assets/LogoNewGreen/icons/Krypto.svg" class="icons-raw">
-                        </a>
-                    </button>
-                </li>
             </ul>
         </div>
     </header>
@@ -68,20 +40,18 @@
             </table>
         </div>
         <hr id="Trennlinie">
-        <table id="data-table" class="data-table">
-            <!-- Hier werden die Daten aus Google Sheets eingefügt -->
-            <th>Name</th>
-            <th>Jahr</th>
-            <th>Holzart</th>
-        </table>
-    
+        <div style="width: 346px;">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScOl971UWckp6MtWstHtG_nGNJPOBoLY4AN6V2HzMFZzI8Evs5oJVfi-cdUEn0ei9WNvwIsHtX3S4K/pubhtml?gid=0&range=AQ2:AU42&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false" style="height: 995px; width: 100%; border: none;"></iframe>
+        </div>
+        <!-- 
+        
         <script>
             // Deine Google Sheets API-Key
             const API_KEY = 'AIzaSyBjejyoA4JplIbca0ElxMQgAkfMJ7c_jAE';
             // Die Spreadsheet-ID deiner Google Tabelle
             const SPREADSHEET_ID = '1tJhK_vRxRaQRfJisPXIOe0_XngXRbHBTAy0SJkqP5pA';
             // Der Bereich, den du auslesen möchtest (z.B. A1:B10)
-            const RANGE = 'Holz!AD3:AL42';
+            const RANGE = 'Holz!AR3:AU42';
 
             // Indexe der Spalten, die nicht standardmäßig angezeigt werden sollen
             const hiddenColumns = [3, 4, 5, 6, 7, 8]; // Hier Spalten 4, 5 und 6 ausblenden (beginnend mit 0)
@@ -122,7 +92,9 @@
             // Lade die Daten, wenn die Seite geladen ist
             window.onload = getSheetData;
 
-        </script>        
+        </script>  
+
+        -->     
     </main>
 </body>
 </html>

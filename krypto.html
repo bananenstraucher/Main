@@ -1,55 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="DEde">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxfel-Krypto</title>
     <script src="https://apis.google.com/js/api.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="script-holz.js"></script>
     <link rel="shortcut icon" href="assets/LogoNewGreen/icons/4.png" type="image/x-icon">
     <style>
+        body{
+            margin: 0;
+            background-color: #131722;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <ul class="left">
-                <li class="logo">
-                    <img src="assets/LogoNewGreen/icons/5.png" style="height: 60px;">
-                </li>
-            </ul>
-            <ul class="right">
-                <li class="icons">
-                    <button>
-                        <a href="index.html"> 
-                            <img src="assets/LogoNewGreen/icons/Icon_House.svg" class="icons-raw">
-                        </a>
-                    </button>
-                </li>
-                <li class="icons">
-                    <button>
-                        <a href="holz.html">
-                            <img src="assets/LogoNewGreen/icons/Holz.svg" class="icons-raw">
-                        </a>
-                    </button>
-                </li>
-                <li class="icons">
-                    <button>
-                        <a href="login.html">
-                            <img src="assets/LogoNewGreen/icons/Key.svg" class="icons-raw">
-                        </a>
-                    </button>
-                </li>
-                <li class="icons">
-                    <button>
-                        <a href="krypto.html">
-                            <img src="assets/LogoNewGreen/icons/Krypto_active.svg" class="icons-raw">
-                        </a>
-                    </button>
-                </li>
-            </ul>
+    <main style="display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, 1fr); grid-column-gap: 0px; grid-row-gap: 0px; height: 1024px">
+        <div style="grid-area: 1 / 1 / 3 / 3;">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                "autosize": true,
+                "symbol": "BINANCE:BTCEUR",
+                "interval": "1",
+                "timezone": "Europe/Berlin",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "hide_top_toolbar": true,
+                "allow_symbol_change": false,
+                "save_image": true,
+                "calendar": true,
+                "support_host": "https://www.tradingview.com"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
         </div>
-    </header>
+
+        <div style="grid-area: 1 / 3 / 3 / 5;">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                "autosize": true,
+                "symbol": "BINANCE:ETHEUR",
+                "interval": "1",
+                "timezone": "Europe/Berlin",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "hide_top_toolbar": true,
+                "allow_symbol_change": false,
+                "save_image": true,
+                "calendar": true,
+                "support_host": "https://www.tradingview.com"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+        <div style="grid-area: 3 / 1 / 5 / 3;">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                "autosize": true,
+                "symbol": "BINANCE:LTCEUR",
+                "interval": "5",
+                "timezone": "Europe/Berlin",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "hide_top_toolbar": true,
+                "allow_symbol_change": false,
+                "save_image": true,
+                "calendar": true,
+                "support_host": "https://www.tradingview.com"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+        <div style="grid-area: 3 / 3 / 4 / 4;">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                "autosize": true,
+                "symbol": "BINANCE:SOLEUR",
+                "interval": "5",
+                "timezone": "Europe/Berlin",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "hide_top_toolbar": true,
+                "allow_symbol_change": false,
+                "save_image": true,
+                "calendar": true,
+                "support_host": "https://www.tradingview.com"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+        <div style="grid-area: 3 / 4 / 4 / 5;">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                "autosize": true,
+                "symbol": "BINANCE:BCHEUR",
+                "interval": "30",
+                "timezone": "Europe/Berlin",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "hide_top_toolbar": true,
+                "allow_symbol_change": false,
+                "save_image": true,
+                "calendar": true,
+                "support_host": "https://www.tradingview.com"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+        <div style="grid-area: 4 / 3 / 5 / 4;">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                "autosize": true,
+                "symbol": "BINANCE:DOTEUR",
+                "interval": "30",
+                "timezone": "Europe/Berlin",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "hide_top_toolbar": true,
+                "allow_symbol_change": false,
+                "save_image": true,
+                "calendar": true,
+                "support_host": "https://www.tradingview.com"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+        <div style="grid-area: 4 / 4 / 5 / 5;">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                "autosize": true,
+                "symbol": "BINANCE:XRPEUR",
+                "interval": "30",
+                "timezone": "Europe/Berlin",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "hide_top_toolbar": true,
+                "allow_symbol_change": false,
+                "save_image": true,
+                "calendar": true,
+                "support_host": "https://www.tradingview.com"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+    </main>
 </body>
 </html>
